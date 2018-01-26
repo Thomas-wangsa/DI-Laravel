@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use App\Http\Traits\Nigorice\Nigorice;
+use App\Http\Traits\Nigorice\TraitNigorice;
 
 class NigoriceRepo implements NigoriceInterface {	
 
