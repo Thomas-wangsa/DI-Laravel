@@ -12,9 +12,9 @@ trait AllDataNigorice {
 	}
 
     private function calculation() {
-        $calculation['avg_max']     = Nigorice::AvgMax();
-        $calculation['avg_min']     = Nigorice::AvgMin();
-        $calculation['avg_var']     = Nigorice::AvgVar();
+        $calculation['avg_max']     = number_format(Nigorice::AvgMax(),2);
+        $calculation['avg_min']     = number_format(Nigorice::AvgMin(),2);
+        $calculation['avg_var']     = number_format(Nigorice::AvgVar(),2);
         return $calculation;
     }
 

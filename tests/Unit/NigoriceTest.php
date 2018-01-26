@@ -5,10 +5,10 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Faker\Generator as Faker;
 
 class NigoriceTest extends TestCase
 {	
-	private $password = "123456";
 	/**
      * Run the Unit Testing.
      *
@@ -26,8 +26,18 @@ class NigoriceTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
-    {
-        $this->assertTrue(true);
+    public function testMain() {
+        $this->test_laravel();
+        //$this->Register();
     }
+
+    public function test_laravel() {
+        $this->visit('/')->seePageIs('/das');
+    }
+    private function Register() {
+
+    }
+
+
+
 }
