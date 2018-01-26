@@ -4,9 +4,9 @@ namespace App\Http\Traits\Nigorice;
 use App\Http\Models\Nigorice;
 use Faker\Factory as Faker;
 
-trait CreateNewNigorice {
+trait CreateNigorice {
 	
-	public function CreateNewNigorice($request) {
+	public function CreateNigorice($request) {
   		$faker = Faker::create();
         $data = [
             'date'          => $request->date,

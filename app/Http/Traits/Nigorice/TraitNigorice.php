@@ -7,6 +7,8 @@ trait TraitNigorice {
 
     use AllDataNigorice;
     use SpecificDataNigorice;
+    use CreateNigorice;
+    use UpdateNigorice;
 
 
 }

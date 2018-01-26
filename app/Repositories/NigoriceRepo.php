@@ -17,7 +17,7 @@ class NigoriceRepo implements NigoriceInterface {
   	}
 
   	public function createNew($request) {
-  		$this->CreateNewNigorice($request);
+  		$this->CreateNigorice($request);
   	}
 
   	public function update($request) {
