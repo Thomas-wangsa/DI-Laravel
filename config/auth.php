@@ -67,6 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
+            // change the location of models users
             'model' => App\Http\Models\Users::class,
         ],
 

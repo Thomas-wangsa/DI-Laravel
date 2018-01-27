@@ -6,11 +6,17 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateNigoriceTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    /*
+    |--------------------------------------------------------------------------
+    | Migration for Nigorice Table
+    | https://laravel.com/docs/5.5/migrations
+    |--------------------------------------------------------------------------
+    | @author Thomas
+    | up()          : migrate & set the fields of table
+    | down()        : drop table nigorice  
+    |
+    */
+    
     public function up()
     {
         Schema::create('nigorice', function (Blueprint $table) {
@@ -21,15 +27,9 @@ class CreateNigoriceTable extends Migration
             $table->uuid('uuid');    
             $table->timestamps();
             $table->softDeletes();
-
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('nigorice');

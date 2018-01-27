@@ -10,6 +10,20 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
+/*
+|--------------------------------------------------------------------------
+| Model Users
+|--------------------------------------------------------------------------
+| @author Thomas
+| $table 		= table name
+| $fillable 	= whitelist field
+| $timestamp 	= avoid auto create & update timestamp
+| $hidden 		= hidding attribute
+| https://laravel.com/docs/5.5/eloquent 
+| https://laravel.com/docs/5.5/eloquent-serialization
+|
+*/
+
 class Users extends Model implements AuthenticatableContract,
                                     AuthorizableContract,
                                     CanResetPasswordContract

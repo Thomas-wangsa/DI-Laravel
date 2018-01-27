@@ -3,6 +3,16 @@ namespace App\Http\Traits\Nigorice;
 
 use App\Http\Models\Nigorice;
 
+/*
+|--------------------------------------------------------------------------
+| Trait Information
+|--------------------------------------------------------------------------
+| @author Thomas
+| GetAllDataNigorice()      : get all data, order by Desc
+| calculation()             : calculation the avg
+|
+*/
+
 trait AllDataNigorice {
 	
 	public function GetAllDataNigorice() {

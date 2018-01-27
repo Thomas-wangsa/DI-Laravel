@@ -13,13 +13,16 @@ use Faker\Generator as Faker;
 |
 */
 
-/**
-*
-* Populate data users with faker in testing database when running phpunit
-*
-* @return void
-* @author thomas
+/*
+|--------------------------------------------------------------------------
+| Database Factory for Users Table
+| populate data with faker
+| https://laravel.com/docs/5.5/seeding
+|--------------------------------------------------------------------------
+| @author Thomas
+|
 */
+
 $factory->define(App\Http\Models\Users::class, function (Faker $faker) {
     return [
         'name'          => strtolower(trim($faker->name)),
@@ -31,13 +34,16 @@ $factory->define(App\Http\Models\Users::class, function (Faker $faker) {
     ];
 });
 
-/**
-*
-* Populate data users with faker in testing database when running phpunit
-*
-* @return void
-* @author thomas
+/*
+|--------------------------------------------------------------------------
+| Database Factory for Nigorice Table
+| populate data with faker
+| https://laravel.com/docs/5.5/seeding
+|--------------------------------------------------------------------------
+| @author Thomas
+|
 */
+
 $factory->define(App\Http\Models\Nigorice::class, function (Faker $faker) {
     return [
         'date'          => $faker->date("2017-m-d","now"),
@@ -45,6 +51,5 @@ $factory->define(App\Http\Models\Nigorice::class, function (Faker $faker) {
         'min'      		=> $faker->numberBetween(40,49),
         'uuid'          => $faker->uuid,
         'created_at'	=> date("Y-m-d H:i:s")
-
     ];
 });
