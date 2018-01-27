@@ -13,7 +13,7 @@ class Nigorice extends Model
     protected $fillable = ['date', 'max', 'min','uuid','created_at'];
     protected $primaryKey = 'id';
 
-    public $timestamps = false;
+
 
     protected $dates = ['deleted_at'];
 

@@ -7,8 +7,8 @@ trait UpdateNigorice {
 	
 	public function UpdateData($request) {
         $data = [
-            'max'   => $request->max,
-            'min'   => $request->min
+            'max'   		=> $request->max,
+            'min'   		=> $request->min
         ];
         Nigorice::fromUUID($request->uuid)->update($data);
 	}
